@@ -1,0 +1,33 @@
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --d0ea3056: -14px;
+  --c2d7c052: 351deg;
+  --49df9c2d: 171deg;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+}
+
+.theme__btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+

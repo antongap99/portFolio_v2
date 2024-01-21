@@ -1,0 +1,8 @@
+
+.section__hero {
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
