@@ -1,23 +1,24 @@
-import {FC, ReactNode, useState} from "react";
+import {FC, ReactNode} from "react";
 import cn from "classnames";
-import './theme.css'
+import './../../Shared/assets/styles/theme.css'
+import {ThemeEnum, useTheme} from "../../Shared/hooks/useTheme.ts";
 interface ThemeWrapperProps {
     children: ReactNode
 }
 const ThemeWrapper: FC<ThemeWrapperProps> = ({children}) => {
-    const [theme, setTheme]= useState<'light' | 'dark'>('light');
+    const {theme, setTheme} =useTheme()
 
     const toggleTheme = () => {
-        if (theme === 'light'){
-            setTheme('dark')
+        if(theme === 'dark'){
+            setTheme(ThemeEnum.default);
         } else {
-            setTheme('light')
+            setTheme(ThemeEnum.dark)
         }
     }
 
     return (
         <div className={cn(theme)}>
-            <button className='theme__btn' onClick={toggleTheme}>Переключатель</button>
+            <button className='theme__btn' onClick={toggleTheme}>Тема</button>
             {children}
         </div>
     );

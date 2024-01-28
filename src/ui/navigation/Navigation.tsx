@@ -9,8 +9,8 @@ const Navigation: FC<NavigationProps> = ({list}) => {
     return (
         <nav className={style.navigation}>
             <ul className={style.navigation__list}>
-                {list.map(item => (
-                    <li className={style.navigation__item}>
+                {list.map((item, index) => (
+                    <li key={index} className={style.navigation__item}>
                         <span className={style.navigation__text}>
                             {item}
                         </span>

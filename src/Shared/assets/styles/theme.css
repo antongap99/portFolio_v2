@@ -1,0 +1,20 @@
+.light {
+    --grey: #ffffff;
+    --back: #ffffff;
+    --text-color: #333333;
+}
+.dark {
+    --grey: #212121;
+    --back: #000000;
+    --text-color: #dbdce4;
+    --bg-section: #212121;
+}
+
+.logo_light{
+    color: #000000;
+
+}
+
+.logo_dark{
+    color: #ffffff;
+}
