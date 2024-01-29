@@ -20,22 +20,27 @@
 }
 
 .hero__btn{
-    max-width: 200px;
-    border: none;
-    border-radius: 2px;
+    display: flex;
+    width: 380px;
+    height: 70px;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
     color: var(--text-color);
-    cursor: pointer;
-    font-family: League Spartan,Arial,sans-serif;
-    font-size: 18px;
     font-weight: 700;
-    height: 45px;
-    letter-spacing: 1.6px;
-    width: 130px;
-    background: linear-gradient(var(--c2d7c052),transparent 70%,#94a3b8),linear-gradient(var(--49df9c2d),transparent 70%,#94a3b8);
+    font-size: 18px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(87deg, #2E00B1 -11.74%, #8100BD 48.81%, #A400BE 113.27%);
+    border-color: #A400BE;
+    transition: ALL 0.2s ease-in-out;
+    cursor: pointer;
 }
 
+
 .hero__btn:hover {
-    --c2d7c052: 141deg;
-    --49df9c2d: 70deg;
+    transition: ALL 0.2s ease-in-out;
+    background: linear-gradient(88deg, #A400BE -14.85%, #8100BD 50.2%, #2E00B1 115.25%, #2E00B1 115.25%);
 }
 
