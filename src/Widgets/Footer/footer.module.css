@@ -1,0 +1,7 @@
+.footer {
+    background: var(--footer-bg);
+    color: #fff;
+    font-family: Libre Baskerville,Palatino Linotype,Times New Roman,serif;
+    padding: 35px 0 15px;
+    width: 100%;
+}

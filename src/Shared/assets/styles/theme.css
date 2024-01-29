@@ -2,12 +2,14 @@
     --grey: #ffffff;
     --back: #ffffff;
     --text-color: #333333;
+    --footer-bg: #dbdce4;
 }
 .dark {
     --grey: #212121;
     --back: #000000;
     --text-color: #dbdce4;
     --bg-section: #212121;
+    --footer-bg: #333333;
 }
 
 .logo_light{
