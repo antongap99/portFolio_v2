@@ -34,13 +34,12 @@
     border-radius: 10px;
     background: linear-gradient(87deg, #2E00B1 -11.74%, #8100BD 48.81%, #A400BE 113.27%);
     border-color: #A400BE;
-    transition: ALL 0.2s ease-in-out;
+    transition: background 1s ease, background-image 1s ease; /**/
     cursor: pointer;
 }
 
 
 .hero__btn:hover {
-    transition: ALL 0.2s ease-in-out;
     background: linear-gradient(88deg, #A400BE -14.85%, #8100BD 50.2%, #2E00B1 115.25%, #2E00B1 115.25%);
 }
 
