@@ -7,15 +7,16 @@ interface  ProjectProps {
     description: string,
     index: number,
     preview: string
+    link: string
 }
-const Project = ({name, description, index, preview}: ProjectProps) => {
+const Project = ({name, description, index, preview, link}: ProjectProps) => {
 
-    const renderProjectIndex = (projectIndex: number) : string => {
+    const renderProjectIndex = (projectIndex: number): string => {
         return projectIndex < 10 ? `0${projectIndex}`: `${projectIndex}`
     }
-    console.log('index % 2  === 0 ',index,  index % 2  === 0 )
+
     return (
-        <div className={style.project}>
+        <a  href={link} target='_blank' className={style.project}>
             <div className={style.projectCountWrapper}>
                 <span className={cn(style.projectCount)}>{renderProjectIndex(index)}</span>
             </div>
@@ -37,7 +38,7 @@ const Project = ({name, description, index, preview}: ProjectProps) => {
                    </div>
                 </div>
             </ImagePreviewWrapper>
-        </div>
+        </a>
     );
 };
 

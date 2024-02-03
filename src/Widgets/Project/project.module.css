@@ -6,6 +6,10 @@
     -webkit-box-shadow: 0px 0px 89px 39px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 0px 89px 39px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 89px 39px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project:nth-child(even){
@@ -42,10 +46,11 @@
     flex-direction: row-reverse;
     width: 100%;
     justify-content: space-between;
+    color: var(--text-color-leghten);
 }
 
 .projectTitle {
-    color: var(--text-color);
+    color: var(--text-color-leghten);
     font-family: Inter, sans-serif;
     font-size: 48px;
     font-weight: 400;

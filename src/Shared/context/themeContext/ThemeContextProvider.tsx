@@ -1,6 +1,6 @@
 import {createContext, useState, useEffect, ReactNode, FC} from 'react';
 interface ThemeContext {
-    theme: string,
+    theme: ThemeEnum,
     toggleTheme?: () => void
 }
 
@@ -18,17 +18,16 @@ interface ThemeProviderProps {
 const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
     const PREFERS_COLOR = ThemeEnum.Dark;
 
+    const cacheTheme: ThemeEnum = (localStorage.getItem("app-theme") as ThemeEnum) || PREFERS_COLOR;
 
-    const [theme, setTheme] = useState(
-        localStorage.getItem("app-theme") || PREFERS_COLOR
-    );
+    const [theme, setTheme] = useState<ThemeEnum>(cacheTheme);
 
     useEffect(() => {
         localStorage.setItem("app-theme", theme);
     }, [theme]);
 
     const toggleTheme = () => {
-        console.log('toggleTheme');
+        console.log('toggleTheme')
         setTheme((prevTheme) =>
             prevTheme === ThemeEnum.Light ? ThemeEnum.Dark : ThemeEnum.Light
         );

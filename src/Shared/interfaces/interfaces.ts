@@ -3,4 +3,5 @@ export interface ProjectsData  {
     name: string,
     description: string,
     preview: string,
+    link: string
 }

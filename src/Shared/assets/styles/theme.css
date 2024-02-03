@@ -8,9 +8,10 @@
     --bg-button: linear-gradient(87deg, #2E00B1 -11.74%, #8100BD 48.81%, #A400BE 113.27%);
     --bg-button-hover: linear-gradient(88deg, #A400BE -14.85%, #8100BD 50.2%, #2E00B1 115.25%, #2E00B1 115.25%);
     /* text */
-    --text-color: #333333;
+    --text-color: #8b64e8;
     --text-color-leghten: #ffffff;
     --text-link: #333333;
+    --text-color-darken: #603cad
 }
 
 .purple {

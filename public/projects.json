@@ -3,18 +3,21 @@
     "id": 1,
     "name": "Minesweeper",
     "description": "first project",
-    "preview": "sweeper.jpg"
+    "preview": "sweeper.jpg",
+    "link": "https://minesweeper-sigma-eight.vercel.app/"
   },
   {
     "id": 2,
     "name": "Indotrevel",
-    "description": "first project1",
-    "preview": "sweeper.jpg"
+    "description": "old project",
+    "preview": "indoTrevel.jpg",
+    "link":   "https://antongap99.github.io/indoTravel/"
   },
   {
     "id": 3,
     "name": "minisweeper3",
     "description": "first project2",
-    "preview": "sweeper.jpg"
+    "preview": "sweeper.jpg",
+    "link":   "#"
   }
 ]
