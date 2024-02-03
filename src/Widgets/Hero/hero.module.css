@@ -4,6 +4,7 @@
 }
 
 .hero__title{
+    margin: 0;
     color: var(--text-color);
     display: inline-block;
     font-size: 58px;
