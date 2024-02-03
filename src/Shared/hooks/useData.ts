@@ -26,7 +26,6 @@ export const useData = <T>({ url }: UseDataProps): UseDataState<T> => {
                 console.log('response', response)
                 if(response.body){
                     const result = await parseStream<T>(response.body);
-                    console.log('result', result)
                     setData(result);
                 } else {
                     throw new Error(`Нет данных`);

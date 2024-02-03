@@ -1,0 +1,15 @@
+.gradient-section {
+    height: 35vh; /* Настройте высоту по своему усмотрению */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Цвет текста для контраста */
+}
+
+
+.hero-projects{
+    background: linear-gradient(to bottom, var(--bg-hero), var(--bg-section));
+}
+.projects-footer{
+    background: linear-gradient(to bottom, var(--bg-section), var(--bg-footer));
+}

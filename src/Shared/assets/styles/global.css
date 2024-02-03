@@ -1,12 +1,31 @@
-
+/* Sections */
 .section__hero {
-    background-color: var(--grey);
+    background-color: var(--bg-hero);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .footer__logo {
     width: 180px;
     height: 180px;
+}
+
+.section__projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-section);
+}
+
+.hero__image-bg {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    display: block;
+    width: 100vw;
+    top: -200px;
+    pointer-events: none;
 }

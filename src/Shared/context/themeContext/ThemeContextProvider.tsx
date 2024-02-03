@@ -8,8 +8,6 @@ export enum ThemeEnum {
     Light = "light",
     Dark = "dark",
 }
-
-console.log('ThemeEnum', ThemeEnum.Light)
 export const themeContext = createContext<ThemeContext>({
     theme: ThemeEnum.Light
 });
@@ -30,6 +28,7 @@ const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
     }, [theme]);
 
     const toggleTheme = () => {
+        console.log('toggleTheme');
         setTheme((prevTheme) =>
             prevTheme === ThemeEnum.Light ? ThemeEnum.Dark : ThemeEnum.Light
         );

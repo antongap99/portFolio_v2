@@ -3,5 +3,5 @@
     align-items: center;
     justify-content: space-between;
     padding: 28px 12vw;
-    background-color: var(--grey);
+    background-color: var(--bg-header);
 }

@@ -14,6 +14,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   position: absolute;
   top: 30px;
   right: 40px;
+  z-index: 2;
 }
 
 

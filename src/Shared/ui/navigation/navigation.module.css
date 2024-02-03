@@ -5,9 +5,9 @@
 .navigation__list {
     display: flex;
     list-style: none;
-    gap: 14px;
     margin: 0;
     padding: 0;
+    gap: 60px;
 }
 
 .navigation__item {

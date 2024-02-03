@@ -9,7 +9,6 @@ interface LogoProps {
 }
 
 const Logo: FC<LogoProps> = ({classname}) => {
-    // TODO Нужно переменую передавать через контекст
     const {theme} = useTheme()
     return (
         theme === 'light' ? (

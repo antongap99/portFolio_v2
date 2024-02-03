@@ -1,7 +1,8 @@
 import {useData} from "../../Shared/hooks/useData.ts";
 import {ProjectsData} from "../../Shared/interfaces/interfaces.ts";
-import style from './project.module.css'
-const url =  './../../../public/projects.json'
+import style from './projects.module.css'
+import Project from "../Project/Project.tsx";
+const url =  './projects.json'
 
 export const Projects = () => {
     const {data, loading, error } = useData<ProjectsData>({url})
@@ -17,12 +18,9 @@ export const Projects = () => {
 
     if(data) {
         return (
-            <div className={style.cardWrapper}>
-                {data.map(project => (
-                    <div key={project.id} className={style.card}>
-                        <h2>{project.name}</h2>
-                        <p>{project.description}</p>
-                    </div>
+            <div className={style.projectsWrapper}>
+                {data.map((project, index) => (
+                    <Project key={project.id} index={index + 1} name={project.name} description={project.description} />
                 ))}
             </div>
         )

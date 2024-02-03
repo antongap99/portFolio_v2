@@ -4,6 +4,7 @@
 
 .section__title {
     color: var(--text-color);
+    font-size: 48px;
 }
 
 .section__content {

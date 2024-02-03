@@ -1,0 +1,25 @@
+.hero__btn{
+    display: flex;
+    width: 380px;
+    height: 70px;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-leghten);
+    font-weight: 700;
+    font-size: 18px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--bg-button);
+    border: none;
+    transition: ALL 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+.hero__btn:hover {
+    transition: ALL 0.2s ease-in-out;
+    background: var(--bg-button-hover);
+}
+
