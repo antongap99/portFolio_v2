@@ -1,17 +1,20 @@
 [
   {
     "id": 1,
-    "name": "miniswiper",
-    "description": "first project"
+    "name": "Minesweeper",
+    "description": "first project",
+    "preview": "sweeper.jpg"
   },
   {
     "id": 2,
-    "name": "miniswiper1",
-    "description": "first project1"
+    "name": "Indotrevel",
+    "description": "first project1",
+    "preview": "sweeper.jpg"
   },
   {
     "id": 3,
-    "name": "miniswiper3",
-    "description": "first project2"
+    "name": "minisweeper3",
+    "description": "first project2",
+    "preview": "sweeper.jpg"
   }
 ]

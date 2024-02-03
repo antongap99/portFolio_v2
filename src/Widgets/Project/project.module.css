@@ -1,14 +1,33 @@
 .project {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
     justify-content: center;
     max-width: 880px;
     width: 100%;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 89px 39px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 89px 39px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 89px 39px rgba(34, 60, 80, 0.2);
 }
 
-.projectTitleWrapper {
+.project:nth-child(even){
+    align-self: flex-end;
+}
 
+.projectContentWrapper {
+    min-height: 400px;
+    display: flex;
+    align-items: end;
+    width: 100%;
+}
+
+.projectContent {
+    display: flex;
+    gap: 40px;
+    align-items: end;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    z-index: 4;
 }
 
 .projectHeader {
@@ -18,10 +37,11 @@
 }
 
 .descriptionWrapper {
-    max-width: 440px;
     gap: 16px;
-    flex-direction: column;
     display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .projectTitle {
@@ -30,11 +50,14 @@
     font-size: 48px;
     font-weight: 400;
     line-height: 120%;
+    margin: 0;
 }
 
 .projectCountWrapper {
     position: relative;
 }
+
+
 
 .projectCount {
     position: absolute;
@@ -42,8 +65,18 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     top: -100px;
+    left: 800px;
+    z-index: 3;
+}
+
+.project:nth-child(even) .projectCount {
     left: -100px;
 }
+
+.projectCount_left {
+    left: 800px;
+}
+
 
 .project:hover  .projectCount {
     opacity: 1;

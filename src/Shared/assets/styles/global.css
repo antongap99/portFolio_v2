@@ -29,3 +29,45 @@
     top: -200px;
     pointer-events: none;
 }
+
+.projectPreview {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.imagePreview {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagePreview::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.projectPreview img {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+}
+
+.project-minisweeper {
+    background-image: url("./../../../../public/sweeper.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}

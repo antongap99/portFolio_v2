@@ -20,7 +20,13 @@ export const Projects = () => {
         return (
             <div className={style.projectsWrapper}>
                 {data.map((project, index) => (
-                    <Project key={project.id} index={index + 1} name={project.name} description={project.description} />
+                    <Project
+                        key={project.id}
+                        index={index + 1}
+                        name={project.name}
+                        description={project.description}
+                        preview={project.preview}
+                    />
                 ))}
             </div>
         )

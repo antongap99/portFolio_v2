@@ -10,7 +10,7 @@ interface  SectionProps {
 
 const Section: FC<SectionProps> = ({children, height, title, classname}) =>  {
     return (
-        <div style={{height: height ?  `${height}vh` : `100vh` }} className={cn(style.section, classname)}>
+        <div style={{minHeight: height ?  `${height}vh` : `100vh` }} className={cn(style.section, classname)}>
             {title && <h2 className={style.section__title}>{title}</h2>}
             <div className={style.section__content}>
                 {children}

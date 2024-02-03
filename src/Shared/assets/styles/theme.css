@@ -3,7 +3,7 @@
     /* background */
     --bg-hero: #ffffff;
     --bg-header: #ffffff;
-    --bg-section: #ffffff;
+    --bg-section: #f3f7f6;
     --bg-footer: #dbdce4;
     --bg-button: linear-gradient(87deg, #2E00B1 -11.74%, #8100BD 48.81%, #A400BE 113.27%);
     --bg-button-hover: linear-gradient(88deg, #A400BE -14.85%, #8100BD 50.2%, #2E00B1 115.25%, #2E00B1 115.25%);
@@ -21,7 +21,7 @@
     /* background */
     --bg-hero: #392350;
     --bg-header: #392350;
-    --bg-section: #1a1d1e;
+    --bg-section: rgb(50, 29, 56);
     --bg-footer: #261c2d;
     --bg-button: linear-gradient(87deg, #2E00B1 -11.74%, #8100BD 48.81%, #A400BE 113.27%);
     --bg-button-hover: linear-gradient(88deg, #A400BE -14.85%, #8100BD 50.2%, #2E00B1 115.25%, #2E00B1 115.25%);
